@@ -2,8 +2,8 @@ from flask import Flask, request, jsonify, render_template
 import joblib
 
 # Load the trained model and vectorizer
-model = joblib.load('sms_spam_model.pkl')
-vectorizer = joblib.load('vectorizer.pkl')
+model = joblib.load('model/sms_spam_model.pkl')
+vectorizer = joblib.load('model/vectorizer.pkl')
 
 app = Flask(__name__)
 

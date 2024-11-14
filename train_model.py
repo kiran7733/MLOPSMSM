@@ -32,5 +32,5 @@ y_pred = model.predict(X_test_vec)
 print(f'Accuracy: {accuracy_score(y_test, y_pred) * 100:.2f}%')
 
 # Save the model and vectorizer
-joblib.dump(model, 'sms_spam_model.pkl')
-joblib.dump(vectorizer, 'vectorizer.pkl')
+joblib.dump(model, 'model/sms_spam_model.pkl')
+joblib.dump(vectorizer, 'model/vectorizer.pkl')
